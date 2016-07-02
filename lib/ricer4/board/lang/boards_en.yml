@@ -1,0 +1,27 @@
+en:
+  ricer4:
+    plugins:
+      board:
+        
+        entry: "%{url} - %{title} - by %{user}"
+
+        board:
+          description: "Service thread which announces new posts."
+          msg_announce: "[%{name}] New post: %{entry}."
+          
+        abbo:
+          trigger: "board.abbo"
+          
+        abbos:
+          trigger: "board.abbos"
+          
+        add:
+          trigger: "board.add"
+          err_test: "Board has not been added: %{reason}."
+          msg_added: "Board #%{id} has been added as %{name}. %{entry}."
+        
+        list:
+          trigger: "board.list"
+
+        unabbo:
+          trigger: "board.unabbo"
